@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d785d6b2483ff47615d0772629403e27 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d785d6b2483ff47615d0772629403e27" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d785d6b2483ff47615d0772629403e27 = L.map(
+                "map_d785d6b2483ff47615d0772629403e27",
+                {
+                    center: [45.95833330000001, 5.312499999999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee6605cbb9525f1c278756031e8e07bd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ee6605cbb9525f1c278756031e8e07bd.addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            var marker_466b636c12e6987522371305b010c734 = L.marker(
+                [46.15, 4.916667],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_466b636c12e6987522371305b010c734.bindTooltip(
+                `<div>
+                     L'Abergement-Clémenciat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0d3bc11e730198b46a81a7abe49d7c4 = L.marker(
+                [46.0, 5.416667],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_a0d3bc11e730198b46a81a7abe49d7c4.bindTooltip(
+                `<div>
+                     L'Abergement-de-Varey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c48c70a989ac333a8e30b16db037990 = L.marker(
+                [46.083333, 4.8],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_1c48c70a989ac333a8e30b16db037990.bindTooltip(
+                `<div>
+                     Amareins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94a68f0776dfabe8b7a7ab0a757e7ec4 = L.marker(
+                [45.95, 5.35],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_94a68f0776dfabe8b7a7ab0a757e7ec4.bindTooltip(
+                `<div>
+                     Ambérieu-en-Bugey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3536233e8161d93c67c8e404c90d8581 = L.marker(
+                [46.0, 4.9],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_3536233e8161d93c67c8e404c90d8581.bindTooltip(
+                `<div>
+                     Ambérieux-en-Dombes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bf82d88858821651c97b2bdc51d58b1 = L.marker(
+                [45.75, 5.6],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_3bf82d88858821651c97b2bdc51d58b1.bindTooltip(
+                `<div>
+                     Ambléon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f8542a3613f3d4e8624cf819cffb9af = L.marker(
+                [46.0, 5.35],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_0f8542a3613f3d4e8624cf819cffb9af.bindTooltip(
+                `<div>
+                     Ambronay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fd13d6048a4e0b67a019f1218962293 = L.marker(
+                [45.933333, 5.333333],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_1fd13d6048a4e0b67a019f1218962293.bindTooltip(
+                `<div>
+                     Ambutrix
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63215668c90189adb1463d0b477ee6b0 = L.marker(
+                [45.8, 5.65],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_63215668c90189adb1463d0b477ee6b0.bindTooltip(
+                `<div>
+                     Andert-et-Condon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15a8654f424c04475cdf00359a1b3227 = L.marker(
+                [45.916667, 5.808333],
+                {}
+            ).addTo(map_d785d6b2483ff47615d0772629403e27);
+        
+    
+            marker_15a8654f424c04475cdf00359a1b3227.bindTooltip(
+                `<div>
+                     Anglefort
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
