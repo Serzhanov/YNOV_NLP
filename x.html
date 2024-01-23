@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Synonym Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .question-container {
+            margin-bottom: 25px;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .correct-answer {
+        display: block;
+        margin-top: 10px;
+        padding: 5px;
+        background-color: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        font-size: 14px;
+        display: none; /* Hide by default and only show when needed */
+    }
+
+
+    .incorrect-answer {
+        display: block;
+        margin-top: 10px;
+        padding: 5px;
+        background-color: #f2dede;
+        color: #a94442;
+        border: 1px solid #ebccd1;
+        border-radius: 4px;
+        font-size: 14px;
+        display: none; /* Hide by default and only show when needed */
+    }
+
+
+    /* Modify the existing classes for correct and incorrect options */
+    select.correct {
+        border: 1px solid #d6e9c6;
+        background-color: #dff0d8;
+    }
+
+
+    select.incorrect {
+        border: 1px solid #ebccd1;
+        background-color: #f2dede;
+}
+
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+
+        .correct-answer {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+
+        .hidden {
+            display: none;
+        }
+
+
+        .correct {
+            color: green;
+        }
+
+
+        .incorrect {
+            color: red;
+            text-decoration: line-through;
+        }
+
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>Synonym Quiz</h2>
+
+<form id="synonymQuizForm">
+    <!-- Question 1 -->
+    <div class="question-container">
+        <label for="synonymQuestion1">1. terres appauvries - synonyme : </label>
+        <select id="synonymQuestion1">
+            <option value="boisées">a) boisées</option>
+            <option value="irriguées">b) irriguées</option>
+            <option value="épuisées">c) épuisées</option>
+        </select>
+        <span class="correct-answer hidden">Réponse correcte : c) épuisées</span>
+    </div>
+
+    <div class="question-container">
+        <label for="synonymQuestion2">2. renforcer l’écosystème - synonyme : </label>
+        <select id="synonymQuestion2">
+            <option value="affaiblir">a) affaiblir</option>
+            <option value="fortifier">b) fortifier</option>
+            <option value="fragiliser">c) fragiliser</option>
+        </select>
+        <span class="correct-answer hidden">Réponse correcte : b) fortifier</span>
+    </div>
+
+    <div class="question-container">
+        <label for="synonymQuestion3">3. créer des écosystèmes plus résilients - synonyme : </label>
+        <select id="synonymQuestion3">
+            <option value="vulnérables">a) vulnérables</option>
+            <option value="robustes">b) robustes</option>
+            <option value="moins résistants">c) moins résistants</option>
+        </select>
+        <span class="correct-answer hidden">Réponse correcte : b) robustes</span>
+    </div>
+
+    <div class="question-container">
+        <label for="synonymQuestion4">4. aléas climatiques - synonyme : </label>
+        <select id="synonymQuestion4">
+            <option value="risques">a) risques</option>
+            <option value="certitudes">b) certitudes</option>
+            <option value="prévisions">c) prévisions</option>
+        </select>
+        <span class="correct-answer hidden">Réponse correcte : a) risques</span>
+    </div>
+
+    <div class="question-container">
+        <label for="synonymQuestion5">5. sécheresses plus fréquentes - synonyme : </label>
+        <select id="synonymQuestion5">
+            <option value="précipitations">a) précipitations</option>
+            <option value="aridités">b) aridités</option>
+            <option value="humidités">c) humidités</option>
+        </select>
+        <span class="correct-answer hidden">Réponse correcte : b) aridités</span>
+    </div>
+
+    <div class="question-container">
+        <label for="synonymQuestion6">6. une baisse de la productivité - synonyme : </label>
+        <select id="synonymQuestion6">
+            <option value="rendement">a) rendement</option>
+            <option value="inéfficacité">b) inéfficacité</option>
+            <option value="activité">c) activité</option>
+        </select>
+        <span class="correct-answer hidden">Réponse correcte : a) rendement</span>
+    </div>
+
+    <div class="question-container">
+        <label for="synonymQuestion7">7. l’humidité abondante - synonyme : </label>
+        <select id="synonymQuestion7">
+            <option value="modérée">a) modérée</option>
+            <option value="excessive">b) excessive</option>
+            <option value="rare">c) rare</option>
+        </select>
+        <span class="correct-answer hidden">Réponse correcte : b) excessive</span>
+    </div>
+
+
+    <button type="button" onclick="validateSynonymQuiz()">Soumettre</button>
+</form>
+
+<script>
+    function validateSynonymQuiz() {
+        var form = document.getElementById('synonymQuizForm');
+        var totalQuestions = form.querySelectorAll('select').length;
+        for(var i = 1; i <= totalQuestions; i++) {
+            var question = document.getElementById('synonymQuestion' + i);
+            var correctAnswerText = question.nextElementSibling.textContent;
+            var correctAnswer = correctAnswerText.substring(correctAnswerText.lastIndexOf(':') + 1).trim();
+            checkSynonymAnswer(question, correctAnswer);
+        }
+    }
+
+    function checkSynonymAnswer(question, correctAnswer) {
+        var userAnswer = question.value;
+        var correctAnswerElement = question.nextElementSibling;
+
+        if (userAnswer === correctAnswer) {
+            question.className = 'correct';
+            correctAnswerElement.classList.add('hidden');
+        } else {
+            question.className = 'incorrect';
+            correctAnswerElement.classList.remove('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>
